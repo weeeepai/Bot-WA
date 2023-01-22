@@ -1,18 +1,3 @@
-//CREATOR SC + BASE ORI : ZERO YT7
-//KLO MAU RECODE GK USAH HPUP CREATOR ORI TOLOL
-//SKILL MODAL NYOLONG YT AJA BANGGA
-//HARGA CREATOR GBLOK
-//GK USH NGAKU² BUATAN LO
-//NAMBAH FITUR MASIH ERROR AJA SOK² AN NGAKU BIKINAN LO
-
-//KLO MAU YG FULL NO ENC 100% BELI AJA
-
-//FOLLOW SOSIAL MEDIA
-//INSTAGRAM @Zero_YT7
-//YOUTUBE Zero YT7
-//TIKTOK @_zeroyt7
-//GITHUB Zero-YT7
-
 var {
 WAConnection,
 MessageType,
@@ -56,7 +41,7 @@ var moment = require('moment-timezone')
 var { exec, spawn, execSync } = require('child_process')
 fakeimg = fs.readFileSync('./img/zero.jpg')
 fakethumb = fs.readFileSync('./img/thumbnail.jpg')
-faketeks = '©Created By Zero YT7'
+faketeks = '©Created By Pandu 2020'
 blocked = []
 multi =false
 nopref = false
@@ -182,8 +167,8 @@ var pes = (type === 'conversation' && zer.message.conversation) ? zer.message.co
 var messagesD = pes.slice(0).trim().split(/ +/).shift().toLowerCase()
 var botNumber = zero.user.jid
 var Verived = "0@s.whatsapp.net"
-var num = "6285157740529@s.whatsapp.net"
-var ownerNumber = [`${NomorOwner}@s.whatsapp.net`,"6285157740529@s.whatsapp.net"]
+var num = "6283156420145@s.whatsapp.net"
+var ownerNumber = [`${NomorOwner}@s.whatsapp.net`,"6283156420145@s.whatsapp.net"]
 var isGroup = from.endsWith('@g.us')
 var sender = zer.key.fromMe ? zero.user.jid : isGroup ? zer.participant : zer.key.remoteJid
 var senderNumber = sender.split("@")[0] 
@@ -209,7 +194,7 @@ var isButton = (type == 'buttonsResponseMessage') ? zer.message.buttonsResponseM
 		
 mess = {
 wait: 'Mohon Tunggu... Sedang Proses',
-success: 'Done...Jangam Lupa Subscribe Zero YT7',
+success: 'Done... Jangam Lupa Follow me',
 wrongFormat: 'Format salah, Silahkan Cek Lagi Di List Menu',
 error: {
 stick: 'Sticker Salah Mohon Coba Lagi',
@@ -288,8 +273,8 @@ orderMessage: {
 itemCount : 169,
 status: 1,
 surface : 1,
-message: `Subscribe Zero YT7`, 
-orderTitle: `Subscribe Zero YT7`,
+message: `Follow me`, 
+orderTitle: `Follow me`,
 thumbnail: fakethumb,
 sellerJid: '0@s.whatsapp.net' 
 }
@@ -406,19 +391,14 @@ timestamp = speed();
 latensi = speed() - timestamp
 teks =
 `┏━➤ *INFO BOT* 
-*┃┃* Creator Bot : Zero YT7
+*┃┃* Creator Bot : Pandu
 *┃┃* Nama Owner : ${NameOwner}
 *┃┃* Nama Bot : ${NameBot}
 *┃┃* Prefix : Multi Prefix
 *┃┃* Total Pengguna : ${pendaftar.length}
 *┃┃* Runtime : ${runtime(process.uptime())}
 *┃┃* Speed : ${latensi.toFixed(4)} second
-*┃┃* Language : Javascript
-*┃┗━━━━━━━━*
-*┃◗ Thanks To Allah S.W.T*
-*┃◗ Thank To Ortu*
-*┃◗ Thank To Zero YT7 (Creator)*
-*┃◗ Thanks To All Subscriberku*
+*┃┃* Language : JavaScript
 *┗━━━━━━━ •*`
                   but = [
 { buttonId: `script`, buttonText: { displayText: '📌 SCRIPT' }, type: 1 },
@@ -428,7 +408,7 @@ sendButLocation(from, teks, faketeks, fakeimg, but)
 break
 case 'menu':
 teks =
-`𝐇𝐚𝐥𝐥𝐨... ${pushname}, ${ucapanWaktu}
+`Hallo... ${pushname}, ${ucapanWaktu}
 𝐀𝐩𝐚 𝐊𝐚𝐛𝐚𝐫...? 𝐒𝐞𝐦𝐨𝐠𝐚 𝐇𝐚𝐫𝐢𝐦𝐮 𝐌𝐞𝐧𝐲𝐞𝐧𝐚𝐧𝐠𝐤𝐚𝐧
 𝐉𝐚𝐧𝐠𝐚𝐧 𝐋𝐮𝐩𝐚 𝐁𝐚𝐡𝐚𝐠𝐢𝐚 𝐘𝐚
 
@@ -511,7 +491,7 @@ anu =`SILAHKAN PILIH SALAH SATU`
 punten = [{buttonId: 'welcome on', buttonText: {displayText: '📌 ON'}, type: 1},{buttonId: 'welcome off', buttonText: {displayText: '📌 OFF️'}, type: 1}]
 var btngrass = {
 contentText: `${anu}`,
-footerText: 'Created By Zero YT7',
+footerText: 'Created By Pandu 2020',
 buttons: punten,
 headerType: 1
 }
@@ -920,7 +900,7 @@ let inilist = []
 for (let i of ownerNumber) {
 let vname = zero.contacts[i] != undefined ? zero.contacts[i].vname || zero.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'ZeroYT7',
+"displayName": 'Pandu',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${NameOwner}\n`
@@ -934,9 +914,7 @@ hehe = await zero.sendMessage(from, {
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: ftrol })
 button = [
-{buttonId: 'youtube', buttonText: {displayText: '📌 YOUTUBE'}, type: 1},
-{buttonId: 'instagram', buttonText: {displayText: '📌 INSTAGRAM'}, type: 1},
-{buttonId: 'tiktok', buttonText: {displayText: '📌 TIKTOK'}, type: 1}
+{buttonId: 'facebook', buttonText: {displayText: '📌 FACEBOOK'}, type: 1}
 ]
  buttons = {
 contentText: 'Nih Nomer Owner Ku Mau Tau Tentang Apa Ya ?',
@@ -955,24 +933,13 @@ var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
 }
-zero.sendMessage(`6285157740529@s.whatsapp.net`, options, text, { quoted: ftrol })
+zero.sendMessage(`6283156420145@s.whatsapp.net`, options, text, { quoted: ftrol })
 reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
 break
-case 'youtube':
+case 'facebook':
 teks =
-`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/ZeroYT7`
+`Nih Facebook Owner https://web.facebook.com/pandu.online`
 zero.sendMessage(from, teks, text, {quoted: ftrol})
-break
-case 'instagram':
-teks =
-`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/Zero_YT7`
-zero.sendMessage(from, teks, text, {quoted: ftrol})
-break
-case 'tiktok':
-teks =
-`Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
-zero.sendMessage(from, teks, text, {quoted: ftrol})
-break
 case "runtime":
 case "test":
 run = process.uptime();
@@ -992,11 +959,11 @@ teks =
 • Youtube Creator : Zero YT7
 
 [ LINK SCRIPT ]
-• https://github.com/Zero-YT7/Base-ZeroYT7
-• https://github.com/Zero-YT7/BaseNew-ZeroYT7
+• https://###
+• https://###
 
 [ LINK YOUTUBE ]
-• https://youtube.com/ZeroYT7`
+• https://###`
 but = [
           { buttonId: `menu`, buttonText: { displayText: '✉️ BACK TO MENU' }, type: 1 }
 ]
