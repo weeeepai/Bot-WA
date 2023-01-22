@@ -9,10 +9,10 @@ const fs = require('fs')
 const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, banner, close } = require('./mess/myfunc')
 const { color } = require('./mess/color')
 const welcome = JSON.parse(fs.readFileSync('./storage/welcome.json'))
-number = '6285157740529@s.whatsapp.net'
+number = '6283156420145@s.whatsapp.net'
 
 require('./srv/zero.js')
-nocache('./srv/zero.js', module => console.log(`${module} Telah Di Updated... Jangan Lupa Subscribe Zero YT7`))
+nocache('./srv/zero.js', module => console.log(`${module} Telah Di Updated... Jangan follow me`))
 
 global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 const starts = async (zero = new WAConnection()) => {
@@ -20,13 +20,10 @@ zero.logger.level = 'warn'
 zero.version = [2, 2143, 3]
 zero.browserDescription = [ 'Zero', 'Firefox', '3.0' ]
 console.log(banner.string)
-console.log(color('[•] [ CREATED BY ZERO YT7 ] [•]'))
+console.log(color('[•] [ CREATED BY PANDU ] [•]'))
 console.log(color('Please Follow Me On Sosial Media'))
 console.log(color(' ==============================================='))
-console.log(color('│ ○ Youtube : https://youtube.com/zero                     '))
-console.log(color('│ ○ Instagram : https://instagram.com/Zero_YT7                 '))
-console.log(color('│ ○ Tiktok : https://tiktok.com/@_zero                        '))
-console.log(color('│ ○ Github : https://github.com/Zero-YT7                        '))
+console.log(color('│ ○ Facebook : https://web.facebook.com/pandu.online                     '))
 console.log(color(' ==============================================='))
 zero.on('qr', () => {
 console.log(color('[','white'), color('!','red'), color(']','white'), color('Please... Scan Is Now Qr Code !'))
@@ -38,7 +35,7 @@ zero.on('connecting', () => {
 start('2', 'Sedang Menyambungkan Mohon Tunggu...')
 })
 zero.on('open', () => {
-success('2', 'Bot Telah Tersambung... Jangan Lupa Subscribe Zero YT7')
+success('2', 'Bot Telah Tersambung... Jangan Lupa Follow me')
 })
 await zero.connect({timeoutMs: 30*1000})
 fs.writeFileSync('./session/qrsession.json', JSON.stringify(zero.base64EncodedAuthInfo(), null, '\t'))
@@ -79,7 +76,7 @@ pp_grup =
 "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60"
 }
 if (anu.action == "add" && mem.includes(zero.user.jid)) {
-zero.sendMessage(anu.jid, "𝐇𝐚𝐲!.. 𝐒𝐚𝐲𝐚 𝐙𝐞𝐫𝐨 𝐘𝐓𝟕 𝐒𝐚𝐲𝐚 𝐀𝐤𝐚𝐧 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐛𝐚𝐧𝐭𝐮 𝐌𝐞𝐦𝐩𝐞𝐫𝐦𝐮𝐝𝐚𝐡 𝐊𝐢𝐧𝐞𝐫𝐣𝐚 𝐖𝐡𝐚𝐭𝐬𝐚𝐩𝐩 𝐒𝐞𝐩𝐞𝐫𝐭𝐢 𝐌𝐞𝐦𝐛𝐮𝐚𝐭 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐃𝐚𝐧 𝐋𝐚𝐢𝐧 𝐋𝐚𝐢𝐧.", "conversation")
+zero.sendMessage(anu.jid, "Hay!.. Saya dPandu BOT Saya Akan Membatu Seperti Membuat Sticker & Lain-lain", "conversation")
 }
       
 if (anu.action == 'add') {
@@ -93,7 +90,7 @@ ppUrl = 'https://telegra.ph/file/c9dfa715c26518201f478.jpg'
 }
 img = await getBuffer(ppUrl)
 teks = `Hallo @${anu_user}\nSelamat Datang Di Group: ${mdata.subject}\n\nSemoga Betah Ya Di Group Ini`
-sendButImage(anu.jid, teks, `©Created By Zero YT7`, img,but = [{buttonId:`hallo`, 
+sendButImage(anu.jid, teks, `©Created By Pandu 2020`, img,but = [{buttonId:`hallo`, 
 buttonText:{displayText: 'SELAMAT DATANG!!!'},type:1}], options = {contextInfo: {mentionedJid: [num, number]},thumbnail: Buffer.alloc(0)})
 } else if (anu.action == 'remove') {
 num = anu.participants[0]
@@ -104,7 +101,7 @@ ppUrl = 'https://i.ibb.co/6BRf4Rc/Hans-Bot-No-Profile.png'
 }
 img = await getBuffer(ppUrl)
 teks = `Bye Bye @${num.split('@')[0]}\nHore... Beban Group Berkurang Selamat Tinggal Di Group: ${mdata.subject}`
-sendButImage(anu.jid, teks, `©Created By Zero YT7`, img,but= [{buttonId: `byebye`, buttonText: {displayText: `SELAMAT TINGGAL!!!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, number]}, thumbnail: Buffer.alloc(0)})
+sendButImage(anu.jid, teks, `©Created By Pandu 2020`, img,but= [{buttonId: `byebye`, buttonText: {displayText: `SELAMAT TINGGAL!!!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, number]}, thumbnail: Buffer.alloc(0)})
 }
 if (anu.action == "promote") {
 anu_user = zero.contacts[mem]
@@ -147,11 +144,11 @@ console.log(e)
 zero.on("group-update", async (anu) => {
 metdata = await zero.groupMetadata(anu.jid);
 if (anu.announce == "false") {
-teks = `- [ 𝗚𝗿𝗼𝘂𝗽 𝗢𝗽𝗲𝗻𝗲𝗱 ] -\n\n𝑮𝒓𝒐𝒖𝒑 𝑻𝒆𝒍𝒂𝒉 𝑫𝒊 𝑩𝒖𝒌𝒂 𝑶𝒍𝒆𝒉 𝑨𝒅𝒎𝒊𝒏\n𝑺𝒆𝒌𝒂𝒓𝒂𝒏𝒈 𝑺𝒆𝒎𝒖𝒂 𝑴𝒆𝒎𝒃𝒆𝒓 𝑫𝒂𝒑𝒂𝒕 𝑴𝒆𝒏𝒈𝒊𝒓𝒊𝒎 𝑷𝒆𝒔𝒂𝒏`;
+teks = `- [ Group Opened ] -\n\nGroup Telah diBuka oleh Admin\nSekarang Semua Member Dapat Mengirim Pesan`;
 zero.sendMessage(metdata.id, teks, MessageType.text);
 console.log(`- [ Group Opened ] - In ${metdata.subject}`);
 } else if (anu.announce == "true") {
-teks = `- [ 𝗚𝗿𝗼𝘂𝗽 𝗖𝗹𝗼𝘀𝗲𝗱 ] -\n\n𝑮𝒓𝒐𝒖𝒑 𝑻𝒆𝒍𝒂𝒉 𝑫𝒊 𝑻𝒖𝒕𝒖𝒑 𝑶𝒍𝒆𝒉 𝑨𝒅𝒎𝒊𝒏\n𝑺𝒆𝒌𝒂𝒓𝒂𝒏𝒈 𝑯𝒂𝒏𝒚𝒂 𝑨𝒅𝒎𝒊𝒏 𝒀𝒂𝒏𝒈 𝑫𝒂𝒑𝒂𝒕 𝑴𝒆𝒏𝒈𝒊𝒓𝒊𝒎 𝑷𝒆𝒔𝒂𝒏`;
+teks = `- [ Group Closed ] -\n\nGroup Telah diTutup\nSekarang Hanya Admin yang Dapat Mengirim Pesan`;
 zero.sendMessage(metdata.id, teks, MessageType.text);
 console.log(`- [ Group Closed ] - In ${metdata.subject}`);
 } else if (!anu.desc == "") {
